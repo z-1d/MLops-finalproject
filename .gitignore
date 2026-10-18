@@ -1,0 +1,10 @@
+data/
+*.csv
+*.parquet
+mlruns/
+.dockerignore
+__pycache__/
+.env
+*.pkl
+*.pth
+*.model

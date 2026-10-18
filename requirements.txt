@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+pandas
+torch
+mlflow
+pytest
+ruff
+dvc[azure]
+streamlit
+requests
