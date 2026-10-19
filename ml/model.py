@@ -1,8 +1,9 @@
-import torch.nn as nn
+from torch import nn
+
 
 class WineNet(nn.Module):
     def __init__(self):
-        super(WineNet, self).__init__()
+        super().__init__()
         self.fc1 = nn.Linear(13, 16)
         self.relu = nn.ReLU()
         self.fc2 = nn.Linear(16, 3)

@@ -1,7 +1,9 @@
 # fix: 完善后端测试逻辑
-from fastapi.testclient import TestClient
-from app.main import app
 import time
+
+from fastapi.testclient import TestClient
+
+from app.main import app
 
 client = TestClient(app)
 
