@@ -1,8 +1,9 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-import torch
 import os
 import sys
+
+import torch
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from ml.model import WineNet
