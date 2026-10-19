@@ -1,5 +1,5 @@
-# fix: 完善后端测试逻辑
-import time
+import sys
+sys.path.append(".")import time
 
 from fastapi.testclient import TestClient
 
