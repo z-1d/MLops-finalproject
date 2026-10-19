@@ -34,5 +34,5 @@ if st.button("开始预测"):
             st.success(f"🎉 预测成功！该葡萄酒属于类别：{pred}")
         else:
             st.error(f"⚠️ 预测失败：{response.text}")
-    except requests.exceptions.RequestException as e::  # noqa: BLE001
+    except requests.exceptions.RequestException as e:
      st.error(f"✖ 无法连接到后端 API: {e}")
