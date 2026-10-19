@@ -1,4 +1,4 @@
-data/
+#data/
 *.csv
 *.parquet
 mlruns/
@@ -8,3 +8,4 @@ __pycache__/
 *.pkl
 *.pth
 *.model
+venv/

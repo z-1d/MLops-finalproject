@@ -1,5 +1,5 @@
-import streamlit as st
 import requests
+import streamlit as st
 
 st.title("🍷 葡萄酒分类预测系统 (AUTO MATES)")
 
@@ -34,5 +34,5 @@ if st.button("开始预测"):
             st.success(f"🎉 预测成功！该葡萄酒属于类别：{pred}")
         else:
             st.error(f"⚠️ 预测失败：{response.text}")
-    except Exception as e:
-        st.error(f"❌ 无法连接到后端 API：{e}")
+    except requests.exceptions.RequestException as e:
+     st.error(f"✖ 无法连接到后端 API: {e}")
