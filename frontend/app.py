@@ -35,4 +35,4 @@ if st.button("开始预测"):
         else:
             st.error(f"⚠️ 预测失败：{response.text}")
     except requests.exceptions.RequestException as e:
-        st.error(f"❌ 无法连接到后端 API：{e}")
+     st.error(f"✖ 无法连接到后端 API: {e}")
