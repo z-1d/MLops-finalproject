@@ -17,7 +17,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - run: ruff check .
-      - run: python -m pytest tests/
+      # ========== 修改这里！增加env环境变量 ==========
+      - name: Run pytest
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python -m pytest tests/
       - run: docker build -t ml-app-test .
   Continuous-Delivery-Staging:
     runs-on: ubuntu-latest
