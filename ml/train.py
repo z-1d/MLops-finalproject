@@ -1,16 +1,17 @@
-import pandas as pd
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import Dataset, DataLoader
+import os
+import sys
+
 import mlflow
 import mlflow.pytorch
-import sys
-import os
+import pandas as pd
+import torch
+from torch import nn, optim
+from torch.utils.data import DataLoader, Dataset
 
 # 引入项目根目录以正常 import model
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from ml.model import WineNet
+
 
 class WineDataset(Dataset):
     def __init__(self, data_path):
