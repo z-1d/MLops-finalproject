@@ -1,3 +1,4 @@
 - 数据来源: sklearn.datasets.load_wine()
 - v1 版本: 178 条原始数据。
 - v2 版本: 去除了类别2，精简为 130 条。
+- 数据 Commit Hash: 1f98d5a
