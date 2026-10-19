@@ -9,4 +9,4 @@ ruff
 dvc[azure]
 streamlit
 requests
-httpx
+httpx2
